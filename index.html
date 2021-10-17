@@ -10,7 +10,10 @@
       "completed": false
     };
     
-    document.getElementById("demo").innerHTML = todo.title 
+    document.getElementById("demo").innerHTML = todo.title
+    
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(resp => console.log(resp))
    </script>
 </BODY>
 </HTML>
