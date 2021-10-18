@@ -3,7 +3,9 @@
   <h1 id="demo"></h1>
 
   <script>
-    document.getElementById("demo").innerHTML = 'Hello World from the script tag'
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(resp => resp.json())
+      .then(todo => document.getElementById("demo").innerHTML = todo.title)
   </script>
 </BODY>
 </HTML>
