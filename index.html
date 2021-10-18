@@ -3,18 +3,7 @@
   <h1 id="demo"></h1>
 
   <script>
-    const todo = {
-      "userId": 1,
-      "id": 1,
-      "title": "delectus aut autem",
-      "completed": false
-    };
-    
-    document.getElementById("demo").innerHTML = todo.title
-    
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then(resp => resp.json())
-      .then(todo_json => console.log(todo_json));
-   </script>
+    document.getElementById("demo").innerHTML = 'Hello World from the script tag'
+  </script>
 </BODY>
 </HTML>
